@@ -11,7 +11,7 @@ const Container: React.FC<{
   return (
     <div className="w-[450px] h-[450px] relative">
       <div className="absolute top-20 left-1/2 transform -translate-x-1/2 -z-10">
-        <Image src={require(`../public/bg-triangle.svg`)} alt="triangle" />
+        <Image src={require(`@/public/assets/bg-triangle.svg`)} alt="triangle" />
       </div>
       <div
         className="absolute top-0 left-[20%]  transform -translate-x-1/2"
