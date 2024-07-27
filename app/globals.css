@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Styling for Game components */
 body {
   min-height: 100vh;
   background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -30,3 +31,51 @@ body {
   background-size: cover;
   border-radius: 100%;
 }
+
+/* ocoto-corner for top right of page to link to github repository */
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+      transform: rotate(0);
+  }
+  20%,
+  60% {
+      transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+      transform: rotate(10deg);
+  }
+}
+
+.github-corner svg {
+  fill: #151513;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+.dark .github-corner svg {
+  fill: #fff;
+  color: black;
+}
+
+.octo-arm {
+  transform-origin: 130px 106px;
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+      animation: none;
+  }
+  .github-corner .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+  }
+}
+

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GitHubCorner from "./GitHubCorner";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={{ position: 'relative', minHeight: '100vh' }}>
+        <div className="flex flex-col items-center" style={{ padding: '20px' }}>
+          <Providers>
+            <main>{children}</main>
+          </Providers>
+        </div>
+        <GitHubCorner />
+      </body>
     </html>
   );
 }
