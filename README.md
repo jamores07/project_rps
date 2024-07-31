@@ -31,7 +31,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/screenshots/Boardshot.png)
+
+![](./public/screenshots/Gameshot.png)
+
+### Links
+
+-   Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/rock-paper-scissor-game-using-nextjs-ygvHMV1Hgi)
+-   Live Site URL: [Rock, Paper, Scissors](https://project-rps-six.vercel.app/)
 
 ### Built with
 
@@ -81,6 +88,11 @@ export default function RootLayout({
 ```
 
 ### Continued development
+
+- [] Adjust the "Rules" modal to render from the score card component
+- [] Add a "Multiplayer Component" button to allow multiple users to play
+- [] Add a "Leaderboard" component to display the top scores
+- [] Update the "Rules" modal to display rules for each game
 
 
 ## Author
